@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "cambria";
+  src: url("/assets/fonts/Cambria.ttf");
+}
+
+body {
+  font-family: "cambria";
+}
+#store-analytics {
+  .custom-card {
+    box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+
+    .header {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0.7rem 0rem;
+
+      .item-1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .titleColor {
+          color: #999;
+        }
+
+        .subTitleFS {
+          font-weight: bold;
+          font-size: 1.15em;
+        }
+      }
+
+      .item-2 {
+        .subtitle {
+          text-align: end;
+        }
+      }
+
+      .item-2,
+      .col {
+        .subtitle {
+          color: #999;
+        }
+      }
+    }
+  }
+}

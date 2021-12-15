@@ -1,0 +1,247 @@
+* {
+  font-family: "DMSans";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("FileName.eot");
+  src: url("FileName.eot?#iefix") format("embedded-opentype"),
+    url("FileName.woff") format("woff"),
+    url("/assets/fonts/DMSans-Regular.ttf") format("truetype"),
+    url("FileName.svg#FontName") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+.user-list-container {
+  width: 88%;
+  margin: 0rem auto;
+  font-size: 0.79em;
+
+  .user-header-container {
+    margin: 2rem auto 0rem auto;
+    box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 2rem;
+    background: #fff;
+
+    .header {
+      color: #999;
+    }
+
+    .col {
+      .text-lead {
+        padding-bottom: 1.5rem;
+        font-weight: bold;
+        font-size: 1.3em;
+      }
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .user-subtitle-container {
+    margin: 0.1rem auto 0rem auto;
+    box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    background: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background: #f9f9f9;
+      //   box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 1.5px rgba(0, 0, 0, 0.034),
+        0 5px 4px rgba(0, 0, 0, 0.048), 0 8.5px 3px rgba(0, 0, 0, 0.06),
+        0 2.3px 7.9px rgba(0, 0, 0, 0.072);
+      transition: all 0.3s ease;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.fc {
+  color: #999;
+}
+
+.col-1 {
+  width: 7%;
+  color: #29c6d5;
+
+  span {
+    margin-left: 0.5rem;
+  }
+}
+
+.col-2 {
+  width: 22%;
+
+  .img-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .img {
+      img {
+        width: 2.3rem;
+        height: 2.3rem;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.col-3 {
+  width: 19%;
+}
+
+.col-4 {
+  width: 15%;
+}
+
+.col-5 {
+  width: 11%;
+}
+
+.col-6 {
+  width: 10%;
+}
+
+.col-7 {
+  width: 10%;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #4f4f4f;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 19px;
+  color: black;
+  z-index: 1;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #39bda7;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:hover {
+  color: #ffffff;
+  border: 1px solid #39bda7;
+}
+
+.button:hover:before {
+  top: -35%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+  top: -45%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+@import "largeMediaquery";
+@import "ipadMediaquery";
+@import "mobileMediaquery";

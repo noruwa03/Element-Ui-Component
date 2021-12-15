@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "DmSan";
+  src: url("/assets/fonts/DMSans-Regular.ttf");
+}
+
+* {
+  font-family: "DmSan";
+}
+/*# sourceMappingURL=styles.css.map */

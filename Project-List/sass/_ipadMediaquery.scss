@@ -1,0 +1,43 @@
+@media screen and (max-width: 824px) {
+    
+.project-list-header-row,
+.project-list-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .fsm {
+      font-size: 0.89em;
+     
+  }
+
+  .fs {
+    font-size: 0.89em;
+  }
+
+  .col-1 {
+    width: 40%;
+  }
+
+  .col-2 {
+   
+    display: none;
+  }
+
+  .col-3 {
+     display: none;
+  }
+
+  .col-4 {
+    width: 20%;
+  }
+
+  .col-5 {
+    width: 16%;
+  }
+
+  .col-6 {
+    width: 5%;
+  }
+}
+}

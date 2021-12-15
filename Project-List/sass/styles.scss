@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "DmSan";
+  src: url("FileName.eot");
+  src: url("FileName.eot?#iefix") format("embedded-opentype"),
+    url("FileName.woff") format("woff"),
+    url("/assets/fonts/DMSans-Regular.ttf") format("truetype"),
+    url("FileName.svg#FontName") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  font-family: "DmSan";
+}
+
+body {
+  background: #f9f9f9;
+}
+
+.m-top {
+  margin-top: 0.1rem;
+}
+
+.p-all-header {
+  padding: 0.6rem 1rem;
+
+  .fs {
+    font-weight: normal;
+    color: #999;
+  }
+}
+
+.p-all {
+  padding: 1.1rem 1rem;
+  cursor: pointer;
+  &:hover {
+    background: #fafafa;
+  }
+}
+
+.table-card {
+  box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+  background: #fff;
+  margin-bottom: 0.1rem;
+}
+
+.project-list-header-row,
+.project-list-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .fs {
+    font-size: 0.89em;
+  }
+
+  .fsm {
+    font-size: 0.9em;
+  }
+
+  .col-1 {
+    width: 33%;
+  }
+
+  .col-2 {
+    width: 15%;
+  }
+
+  .col-3 {
+    width: 10%;
+  }
+
+  .col-4 {
+    width: 15%;
+  }
+
+  .col-5 {
+    width: 16%;
+
+    span {
+      font-size: 0.85em;
+    }
+  }
+
+  .col-6 {
+    width: 5%;
+  }
+}
+
+
+
+@import "lgMediaquery";
+@import "ipadMediaquery";
+@import "mdMediaquery";
+@import "mobileMediaquery";

@@ -1,0 +1,53 @@
+@media screen and (max-width: 668px) {
+  .user-list-container {
+    width: 92%;
+  
+
+    .user-header-container,
+    .user-subtitle-container {
+      padding: 1.2rem 0.9rem;
+    }
+  }
+
+  .col-1 {
+    display: none;
+  }
+
+  .col-2 {
+    width: 55%;
+
+    .img-name {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      .img {
+        img {
+          width: 2.3rem;
+          height: 2.3rem;
+          border-radius: 50%;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .col-3 {
+    display: none;
+  }
+
+  .col-4 {
+    display: none;
+  }
+
+  .col-5 {
+    display: none;
+  }
+
+  .col-6 {
+    display: none;
+  }
+
+  .col-7 {
+    width: 40%;
+  }
+}

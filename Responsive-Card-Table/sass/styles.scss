@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: 000;
+  font-family: "dmSan";
+}
+
+@font-face {
+  font-family: "dmSan";
+  src: url("/assets/fonts/DMSans-Regular.ttf");
+}
+
+.sub-color1 {
+  color: #29c6d5;
+}
+
+.sub-color2 {
+  color: #999;
+}
+
+#card-table {
+  background: #f9f9f9;
+  height: 100%;
+  font-size: 0.79em;
+  padding-top: 3rem;
+
+  .custom-container {
+    width: 88%;
+    margin: 0.1rem auto 0rem auto;
+    box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 2rem;
+    background: #fff;
+    cursor: pointer;
+
+    .text-lead {
+      padding-bottom: 1rem;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .col-1 {
+        width: 15%;
+      }
+
+      .col-2 {
+        width: 32%;
+      }
+
+      .col-3 {
+        width: 20%;
+      }
+
+      .col-4 {
+        width: 20%;
+      }
+
+      .col-5 {
+        width: 10%;
+      }
+
+      .header {
+        color: #999;
+      }
+
+      .col-2 {
+        .subtitle {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
+  .custom-card {
+    width: 88%;
+    margin: 0.1rem auto 0rem auto;
+    box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    background: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background: #f9f9f9;
+      //   box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 1.5px rgba(0, 0, 0, 0.034),
+        0 5px 4px rgba(0, 0, 0, 0.048), 0 8.5px 3px rgba(0, 0, 0, 0.06),
+        0 2.3px 7.9px rgba(0, 0, 0, 0.072);
+      transition: all 0.3s ease;
+    }
+
+    .text-lead {
+      padding-bottom: 1rem;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .col-1 {
+        width: 15%;
+      }
+
+      .col-2 {
+        width: 32%;
+      }
+
+      .col-3 {
+        width: 20%;
+      }
+
+      .col-4 {
+        width: 20%;
+      }
+
+      .col-5 {
+        width: 10%;
+      }
+
+      .header {
+        color: #999;
+      }
+
+      .col-2 {
+        .subtitle {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+
+@import "tableMediaquery";
